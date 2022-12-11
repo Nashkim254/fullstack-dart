@@ -10,7 +10,7 @@ User _$UserFromJson(Map<String, dynamic> json) => User(
       id: json['id'] as String,
       name: json['name'] as String,
       msisdn: json['msisdn'] as String,
-      nationalId: (json['nationalId'] as num).toDouble(),
+      nationalId: json['nationalId'] as String,
       type: $enumDecode(_$UserTypeEnumMap, json['type']),
     );
 

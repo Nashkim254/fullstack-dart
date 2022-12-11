@@ -16,7 +16,7 @@ class User extends Equatable {
   final String id;
   final String name;
   final String msisdn;
-  final double nationalId;
+  final String nationalId;
   final UserType type;
 
   // ignore: sort_constructors_first

@@ -14,7 +14,7 @@ Future<Response> onRequest(RequestContext context) async {
       final json = await context.request.json();
       final body = User.fromJson(json);
       users.add(body);
-      return Response.json(statusCode: 201, body: body);
+      return Response.json(statusCode: 200, body: body);
     case HttpMethod.put:
       final json = await context.request.json();
       final body = User.fromJson(json);
